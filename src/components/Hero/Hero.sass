@@ -1,0 +1,76 @@
+@import 'src/assets/_mixins.sass'
+//@mixin fonts($fontfamily,$fontsize, $fontweight,$text-align, $lineheight, $letterspacing, $color)
+
+.section.dark
+  article
+    .hola
+      +fonts(Roboto,1.6rem,900,center,29px, 0em, $textHoverDark)
+
+    .sub-name
+      +fonts(Roboto,3rem,900, left,1.15em,1px, $textHoverDark)
+      span
+        +fonts(Roboto,3.2rem,900,left,1.15em,1px,$captions)
+    .summary
+      +fonts(Roboto,16px,900,left ,1.15em,1px, $textHoverDark)
+.section
+  width: 100%
+  height: calc(100vh - 89px)
+  //background: $specialTextColor
+  padding: 90px
+  display: flex
+
+  .article
+
+
+    .hola
+      +fonts(Roboto,1.6rem,900,center,29px, 0em, $lightText)
+
+    .name
+      +fonts(Roboto,3.6rem,900, left  ,1.15em,1px, $captions)
+
+    .sub-name
+      +fonts(Roboto,3rem,900, left,1.15em,1px, $lightText)
+      span
+        +fonts(Roboto,3.2rem,900,left,1.15em,1px,$captions)
+
+    .summary
+      +fonts(Roboto,16px,900,left ,1.15em,1px, $lightText)
+
+  figure
+    display: flex
+    position: relative
+    width: 16.44em
+    height: 17.67em
+    //overflow: hidden
+
+    .profile-pic
+      margin-left: 70px
+      display: inline-block
+      position: absolute
+      width: inherit
+      height: inherit
+      background-image: url('../../assets/img/profilepic.jpeg')
+      background-size: cover
+      border-radius: 3  px solid $captions
+      //filter: blur(1px)
+      z-index: 3
+      &:hover
+        filter: blur(0px)
+
+    .contrast
+      z-index: 3
+      position: absolute
+      margin-left: 70px
+      opacity: .45
+      width: inherit
+      height: inherit
+      background: $textHoverDark
+      transition: background-color .3s
+
+
+      &:hover
+        background: none
+
+//Dark Mode
+
+
