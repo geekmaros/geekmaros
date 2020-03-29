@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div >
         <label class="toggler">
             <input @click="setDark" v-model="dark" type="checkbox">
             <span class="toggle-slide rounded" ></span>

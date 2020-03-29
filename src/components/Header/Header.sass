@@ -12,6 +12,7 @@ header
 
   .logo
     +fonts(Montserrat,1.6rem,900,center,29px,0px, $lightText)
+    z-index: 3000
   .nav.dark
     li
       color: $textHoverDark
@@ -65,6 +66,7 @@ header
     background: none
     outline: none
     display: none
+    z-index: 3000
 
     &:active
       outline: none
@@ -73,6 +75,7 @@ header
     width: 40px
     height: 40px
     position: relative
+    z-index: 3000
 
 
 
@@ -118,6 +121,7 @@ header
 
 @media screen and (max-width: $mobileScreen)
   header
+    padding: 20px 20px !important
 
   .nav.open.dark
     background-color: $siteDarkBgColor
@@ -136,6 +140,7 @@ header
     display: flex
     justify-content: center
     align-items: center
+    z-index: 1000
 
     ul
       display: flex
@@ -170,9 +175,11 @@ header
 
   .button
     display: block
-    z-index: 1000
+    z-index: 4000
+
 
     .hamburger-container.open
+
 
       .hamburger.toggle
         background: none !important

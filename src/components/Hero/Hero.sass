@@ -4,7 +4,7 @@
 .section.dark
   article
     .hola
-      +fonts(Roboto,1.6rem,900,center,29px, 0em, $textHoverDark)
+      +fonts(Roboto,3.2rem,900,center,29px, 0em, $textHoverDark)
 
     .sub-name
       +fonts(Roboto,3rem,900, left,1.15em,1px, $textHoverDark)
@@ -20,13 +20,14 @@
   display: flex
 
   .article
+    margin-left: 10px
 
 
     .hola
       +fonts(Roboto,1.6rem,900,center,29px, 0em, $lightText)
 
     .name
-      +fonts(Roboto,3.6rem,900, left  ,1.15em,1px, $captions)
+      +fonts(Roboto,3.4rem,900, left  ,1.15em,1px, $captions)
 
     .sub-name
       +fonts(Roboto,3rem,900, left,1.15em,1px, $lightText)
@@ -54,6 +55,7 @@
       border-radius: 3  px solid $captions
       //filter: blur(1px)
       z-index: 3
+      filter: drop-shadow(8px 8px 10px gray)
       &:hover
         filter: blur(0px)
 
@@ -71,6 +73,78 @@
       &:hover
         background: none
 
-//Dark Mode
+//Mobile responsiveness
+
+@media screen and (max-width: $mobileScreen)
+  .section
+    display: flex
+    flex-direction: column
+    padding: 15px 25px
+
+    .article
+
+      .hola
+        +fonts(Roboto,1.2rem,900,center,29px, 0em, $lightText)
+
+      .name
+        +fonts(Roboto,2.4rem,900, left  ,1.15em,1px, $captions)
+        margin-bottom: 10px
+
+      .sub-name
+        +fonts(Roboto,1.5rem,900, left,1.15em,1px, $lightText)
+        span
+          +fonts(Roboto,1.5rem,900,left,1.15em,1px,$captions)
+      .summary
+        +fonts(Roboto,16px,900,left ,1.15em,1px, $lightText)
+
+    figure
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-top: 40px
+      .profile-pic, .contrast
+        transform: translate(-15%, 4%)
+        align-content: center
+        filter: drop-shadow(8px 8px 10px gray)
+
+
+
+.section.dark
+  display: flex
+  flex-direction: column
+  padding: 15px 25px
+
+  .article
+
+    .hola
+      +fonts(Roboto,1.2rem,900,center,29px, 0em, $textHoverDark)
+
+    .name
+      +fonts(Roboto,2.4rem,900, left  ,1.15em,1px, $captions)
+      margin-bottom: 10px
+
+    .sub-name
+      +fonts(Roboto,1.5rem,900, left,1.15em,1px, $textHoverDark)
+      span
+        +fonts(Roboto,1.5rem,900,left,1.15em,1px,$captions)
+    .summary
+      +fonts(Roboto,16px,900,left ,1.15em,1px, $textHoverDark)
+
+  figure
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 40px
+    .profile-pic, .contrast
+      transform: translate(-15%, 4%)
+      align-content: center
+      filter: drop-shadow(0px 0px 0px gray) !important
+
+
+
+
+
+
+
 
 
