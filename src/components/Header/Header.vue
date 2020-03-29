@@ -1,6 +1,6 @@
 <template>
 <div>
-    <header  class="flex justify-content-between align-items-center py-24 px-48 ">
+    <header  class="flex  justify-content-between align-items-center py-24 px-48 ">
         <a :class="{'dark': isDarkMode}" class="logo animated fadeInDown bounce  z-index-1" href="/">
             <span class="main test">G</span>
 <!--            <span class="sub-main">eek</span>-->
@@ -22,6 +22,7 @@
                 <li class="animated fadeInDown bounce slow"><a href="#about">About</a></li>
                 <li class="animated fadeInDown bounce slow "><a href="#">Works</a></li>
                 <li class="animated fadeInDown bounce slower "><a href="#">Résumé</a></li>
+                <li class="animated fadeInDown bounce slower "><a href="#">Get in Touch</a></li>
             </ul>
         </nav>
     </header>

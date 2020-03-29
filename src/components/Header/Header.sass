@@ -16,8 +16,10 @@ header
   .nav.dark
     li
       color: $textHoverDark
-      a:hover, a:visited,a:active, a:link
+      a:visited,a:active, a:link
         color: $textHoverDark
+        &:hover
+          color: $captions
   nav
     display: flex
     flex-wrap: wrap
@@ -28,8 +30,9 @@ header
 
     li
       a
+        color: $textHoverDark
         &:hover
-          color: $textHoverDark
+          color: $captions
 
 
 
@@ -51,11 +54,11 @@ header
         cursor: pointer
         text-decoration: none
         color: inherit
-        &:active, &:visited, &:link
+        &:active, &:visited, &:link, &:hover
           text-decoration: none
 
         &:hover
-          color: #7d3cff
+          color: $captions
           //#ccf381
           //7d3cff
 
@@ -66,7 +69,7 @@ header
     background: none
     outline: none
     display: none
-    z-index: 3000
+    z-index: 5000
 
     &:active
       outline: none
@@ -127,6 +130,8 @@ header
     background-color: $siteDarkBgColor
     li
       color: $textHoverDark
+      a:hover
+        color: $captions
 
   .nav.open
     visibility: visible
