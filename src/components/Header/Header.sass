@@ -16,7 +16,7 @@ header
   .nav.dark
     li
       color: $textHoverDark
-      a:visited,a:active, a:link
+      .link:visited,.link:active, .link:link
         color: $textHoverDark
         &:hover
           color: $captions
@@ -29,7 +29,7 @@ header
     flex-wrap: wrap
 
     li
-      a
+      .link
         color: $textHoverDark
         &:hover
           color: $captions
@@ -42,6 +42,7 @@ header
     display: flex
 
 
+
     li
       list-style: none
       line-height: 2.5
@@ -49,7 +50,7 @@ header
       margin: 0px 10px
       font-size: .9em
 
-      a
+      .link
         display: inline-block
         cursor: pointer
         text-decoration: none
@@ -130,7 +131,7 @@ header
     background-color: $siteDarkBgColor
     li
       color: $textHoverDark
-      a:hover
+      .link:hover
         color: $captions
 
   .nav.open

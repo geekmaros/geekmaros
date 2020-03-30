@@ -17,12 +17,8 @@
 
 
         <nav class="nav" :class="{'open': isNavOpen,'dark':isDarkMode } ">
-            <ul  class="nav-wrapper">
-                <li class="animated fadeInDown bounce "><a href="#">Home</a></li>
-                <li class="animated fadeInDown bounce slow"><a href="#about">About</a></li>
-                <li class="animated fadeInDown bounce slow "><a href="#">Works</a></li>
-                <li class="animated fadeInDown bounce slower "><a href="#">Résumé</a></li>
-                <li class="animated fadeInDown bounce slower "><a href="#">Get in Touch</a></li>
+            <ul  class="nav-wrapper" >
+                <li class="animated fadeInDown bounce " v-for="(link, i) in links" :key="i"><router-link class="link" to="/about">{{link.name}}</router-link></li>
             </ul>
         </nav>
     </header>
@@ -36,6 +32,12 @@
     export default {
         data(){
             return{
+                links:[{name: 'About', link: '/about'},
+                    {name: 'Works', link: '/about'},
+                    {name: 'Résumé', link: '/resume'},
+                    {name: 'Get in Touch', link: '/contact'},
+
+                ],
                 isNavOpen: false
             }
         },

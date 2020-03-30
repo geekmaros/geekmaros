@@ -8,21 +8,25 @@
   display: flex !important
 
   .article
+    width: 50%
     margin-left: 10px
+
+
 
 
     .hola
       +fonts(Roboto,1.6rem,900,center,29px, 0em, $lightText)
 
     .name
-      +fonts(Roboto,3.4rem,900, left  ,1.15em,1px, $captions)
+      +fonts(Poppins,3.4rem,900, left  ,1.15em,1px, $captions)
 
     .sub-name
-      +fonts(Roboto,3rem,900, left,1.15em,1px, $lightText)
+      +fonts(Roboto,2.2rem,900, left,1.15em,1px, $lightText)
       span
-        +fonts(Roboto,3.2rem,900,left,1.15em,1px,$captions)
+        +fonts(Poppins,2.2rem,900,left,1.15em,1px,$captions)
 
     .summary
+      width: 75%
       +fonts(Roboto,16px,900,left ,1.15em,1px, $lightText)
 
   figure
@@ -30,12 +34,13 @@
     position: relative
     width: 16.44em
     height: 17.67em
+    margin-left: 20px
     //overflow: hidden
 
     svg
       position: absolute
-      top: -190px
-      right: -190px
+      top: 10px
+      left: -80px
 
     .profile-pic
       margin-left: $picMarginLeft
@@ -85,21 +90,25 @@
   flex-direction: row
 
   .article
+    width: 50%
     margin-left: 10px
+
+
 
 
     .hola
       +fonts(Roboto,1.6rem,900,center,29px, 0em, $textHoverDark)
 
     .name
-      +fonts(Roboto,3.4rem,900, left  ,1.15em,1px, $captions)
+      +fonts(Poppins,3.4rem,900, left  ,1.15em,1px, $captions)
 
     .sub-name
-      +fonts(Roboto,3rem,900, left,1.15em,1px, $textHoverDark)
+      +fonts(Roboto,2.2rem,900, left,1.15em,1px, $textHoverDark)
       span
-        +fonts(Roboto,3.2rem,900,left,1.15em,1px,$captions)
+        +fonts(Poppins,2.2rem,900,left,1.15em,1px,$captions)
 
     .summary
+      width: 75%
       +fonts(Roboto,16px,900,left ,1.15em,1px, $textHoverDark)
 
   figure
@@ -107,7 +116,13 @@
     position: relative
     width: 16.44em
     height: 17.67em
+    margin-left: 20px
     //overflow: hidden
+
+    svg
+      position: absolute
+      top: 10px
+      left: -80px
 
     .profile-pic
       margin-left: $picMarginLeft
@@ -151,19 +166,21 @@
     padding: 15px 25px
 
     .article
+      width: 100%
 
       .hola
         +fonts(Roboto,1.2rem,900,center,29px, 0em, $lightText)
 
       .name
-        +fonts(Roboto,2.4rem,900, left  ,1.15em,1px, $captions)
+        +fonts(Poppins,2.4rem,900, left  ,1.15em,1px, $captions)
         margin-bottom: 10px
 
       .sub-name
         +fonts(Roboto,1.5rem,900, left,1.15em,1px, $lightText)
         span
-          +fonts(Roboto,1.5rem,900,left,1.15em,1px,$captions)
+          +fonts(Poppins,1.5rem,900,left,1.15em,1px,$captions)
       .summary
+        width: 100%
         +fonts(Roboto,16px,900,left ,1.15em,1px, $lightText)
 
     figure
@@ -171,6 +188,11 @@
       justify-content: center
       align-items: center
       margin-top: 40px
+
+      svg
+        position: absolute
+        top: 10px
+        left: -110px
       .profile-pic, .contrast
         transform: translate(-15%, 4%)
         align-content: center
@@ -180,25 +202,28 @@
         margin-left: 20px
         top: 35px
 
+
   .section.dark
     display: flex
     flex-direction: column
     padding: 15px 25px
 
     .article
+      width: 100%
 
       .hola
         +fonts(Roboto,1.2rem,900,center,29px, 0em, $textHoverDark)
 
       .name
-        +fonts(Roboto,2.4rem,900, left  ,1.15em,1px, $captions)
+        +fonts(Poppins,2.4rem,900, left  ,1.15em,1px, $captions)
         margin-bottom: 10px
 
       .sub-name
         +fonts(Roboto,1.5rem,900, left,1.15em,1px, $textHoverDark)
         span
-          +fonts(Roboto,1.5rem,900,left,1.15em,1px,$captions)
+          +fonts(Poppins,1.5rem,900,left,1.15em,1px,$captions)
       .summary
+        width: 100%
         +fonts(Roboto,16px,900,left ,1.15em,1px, $textHoverDark)
 
     figure
@@ -206,14 +231,16 @@
       justify-content: center
       align-items: center
       margin-top: 40px
+
+      svg
+        position: absolute
+        top: 10px
+        left: -110px
       .profile-pic, .contrast
         transform: translate(-15%, 4%)
         align-content: center
+        border: 1px solid $textHoverDark
 
-
-
-
-
-
-
-
+      .square
+        margin-left: 20px
+        top: 35px
