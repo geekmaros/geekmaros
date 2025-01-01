@@ -33,16 +33,16 @@ Product-driven Frontend Engineer passionate about crafting visually captivating 
 ## 🛠️ Tech Stack
 ```javascript
 const techStack = {
-    languages: ['JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'PHP'],
-    frameworks: ['Vue.js', 'Nuxt.js', 'React.js', 'Laravel'],
-    styling: ['Tailwind CSS'],
-    testing: ['Unit Testing', 'Integration Testing'],
+    languages: ['JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'PHP', 'Ruby'],
+    frameworks: ['Vue.js', 'Nuxt.js', 'React.js', 'Laravel', 'Ruby on Rails'],
+    styling: ['SASS','Tailwind CSS'],
+    testing: ['Unit Testing', 'Integration Testing', 'Jest', 'Playwright'],
     tools: ['Vite', 'Webpack', 'REST APIs', 'Headless CMS']
 }
 ```
 
 ## 🏆 Achievements
-- 🎯 Speaker at VueJS Live London 2023
+- 🎯 Speaker at VueJS Live London 2023 (Domain Driven Design in Vuejs)
 - 🌟 Nominated as Promising Software Developer (Frontend) - TechTrend Africa 2021
 - 👥 Led tech community initiatives at university level
 
